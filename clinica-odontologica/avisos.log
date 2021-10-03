@@ -100,3 +100,48 @@
 [2021-10-02 16:34:04] [ DEBUG] [OdontologoController:27] ---- Buscando todos los odontólogos----
 [2021-10-02 16:34:33] [ DEBUG] [TurnoController:43] ---- Buscando turno por id.... ----
 [2021-10-02 16:34:33] [ INFO ] [TurnoController:49] Turno con id: 2 encontrado.
+[2021-10-03 12:26:47] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-03 12:26:53] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:26:53] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:26:59] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-03 12:26:59] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-03 12:27:03] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-03 12:27:03] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-03 12:27:07] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-03 12:27:22] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-03 12:27:22] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-03 12:27:25] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:27:25] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:27:31] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-03 12:27:40] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:27:40] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:27:46] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:27:46] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:27:50] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:27:50] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:29:24] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-03 12:29:53] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-03 12:30:36] [ INFO ] [TurnoController:96] Turno con id: 2 eliminado.
+[2021-10-03 12:33:20] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-03 12:33:51] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-03 12:33:57] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-03 12:33:57] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-03 12:34:04] [ INFO ] [PacienteController:86] paciente con id: 2 eliminado.
+[2021-10-03 12:34:32] [ DEBUG] [PacienteController:35] ---- Buscando paciente por id.... ----
+[2021-10-03 12:34:32] [ INFO ] [PacienteController:40] Paciente con id: 1 encontrado.
+[2021-10-03 12:34:36] [ DEBUG] [PacienteController:35] ---- Buscando paciente por id.... ----
+[2021-10-03 12:34:41] [ DEBUG] [PacienteController:35] ---- Buscando paciente por id.... ----
+[2021-10-03 12:34:41] [ INFO ] [PacienteController:40] Paciente con id: 1 encontrado.
+[2021-10-03 12:37:44] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:37:44] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:38:55] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:38:55] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:40:15] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:40:15] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:40:32] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-03 12:41:02] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-03 12:41:02] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-03 12:41:16] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-03 12:42:49] [ DEBUG] [TurnoController:43] ---- Buscando turno por id.... ----
+[2021-10-03 12:43:24] [ DEBUG] [TurnoController:43] ---- Buscando turno por id.... ----
+[2021-10-03 12:43:24] [ INFO ] [TurnoController:49] Turno con id: 4 encontrado.

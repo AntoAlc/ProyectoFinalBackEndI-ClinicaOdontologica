@@ -31,9 +31,17 @@ public class PacienteDTO {
         this.apellido =p.getApellido();
         this.dni=p.getDni();
         this.fechaIngreso =p.getFechaIngreso();
-
         this.domicilio = new DomicilioDTO(p.getDomicilio());
+    }
 
+
+    public PacienteDTO(Integer id, String nombre, String apellido, Integer dni, LocalDateTime fechaIngreso, DomicilioDTO domicilio) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dni = dni;
+        this.fechaIngreso = fechaIngreso;
+        this.domicilio = domicilio;
     }
 
     public Paciente toEntity(){

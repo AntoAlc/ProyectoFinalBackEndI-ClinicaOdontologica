@@ -2,7 +2,6 @@ package com.grupo6.clinicaodontologica.controller;
 
 
 import com.grupo6.clinicaodontologica.dto.TurnoDTO;
-import com.grupo6.clinicaodontologica.persistence.model.Turno;
 import com.grupo6.clinicaodontologica.service.ICRUDService;
 import com.grupo6.clinicaodontologica.service.Impl.TurnoCRUDServiceImpl;
 import org.apache.log4j.Logger;
@@ -13,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -29,8 +27,6 @@ public class TurnoController {
 
  //   @Autowired
   //  TurnoCRUDServiceImpl serviceTurnoDTO;
-
-
 
     @GetMapping("/buscarTodos")
     public ResponseEntity<List<TurnoDTO>> buscarTodos() {

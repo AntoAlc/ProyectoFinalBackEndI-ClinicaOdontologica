@@ -31,6 +31,22 @@ public class DomicilioDTO implements Serializable {
         this.provincia=d.getProvincia();
     }
 
+    public DomicilioDTO(String calle, String numero, String localidad, String provincia) {
+        this.calle = calle;
+        this.numero = numero;
+        this.localidad = localidad;
+        this.provincia = provincia;
+    }
+
+
+    public DomicilioDTO(Integer id, String calle, String numero, String localidad, String provincia) {
+       this.id = id;
+        this.calle = calle;
+        this.numero = numero;
+        this.localidad = localidad;
+        this.provincia = provincia;
+    }
+
 
     public Domicilio toEntity(){
         Domicilio entity = new Domicilio();

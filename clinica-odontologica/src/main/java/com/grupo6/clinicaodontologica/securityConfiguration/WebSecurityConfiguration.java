@@ -18,11 +18,20 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableGlobalMethodSecurity(prePostEnabled=true)
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    @Autowired
     private UserServiceImpl userService;
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    public WebSecurityConfiguration(UserServiceImpl userService, BCryptPasswordEncoder bCryptPasswordEncoder) {
+        this.userService = userService;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+    }
+
+    public WebSecurityConfiguration(boolean disableDefaults, UserServiceImpl userService, BCryptPasswordEncoder bCryptPasswordEncoder) {
+        super(disableDefaults);
+        this.userService = userService;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -36,6 +45,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and().formLogin().permitAll()
                 .and().logout().permitAll()
                 .and().exceptionHandling().accessDeniedPage("/403");
+                //.and().formLogin().loginPage("./login.html");  //si quiero usar mi propio login
+
+
 
         http.headers().frameOptions().disable();
 
