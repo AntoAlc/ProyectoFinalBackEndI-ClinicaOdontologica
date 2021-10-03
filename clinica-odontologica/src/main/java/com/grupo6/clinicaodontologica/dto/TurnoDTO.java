@@ -2,7 +2,6 @@ package com.grupo6.clinicaodontologica.dto;
 
 
 
-import com.grupo6.clinicaodontologica.persistence.model.Paciente;
 import com.grupo6.clinicaodontologica.persistence.model.Turno;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;

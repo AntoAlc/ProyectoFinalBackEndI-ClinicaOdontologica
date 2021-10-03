@@ -1,4 +1,4 @@
-package com.grupo6.clinicaodontologica.service.Impl;
+package com.grupo6.clinicaodontologica.service.impl;
 
 import com.grupo6.clinicaodontologica.dto.OdontologoDTO;
 import com.grupo6.clinicaodontologica.dto.PacienteDTO;
@@ -8,7 +8,6 @@ import com.grupo6.clinicaodontologica.persistence.repository.ITurnoRepository;
 import com.grupo6.clinicaodontologica.service.ICRUDService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

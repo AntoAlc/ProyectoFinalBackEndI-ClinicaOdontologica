@@ -2,11 +2,10 @@ package com.grupo6.clinicaodontologica.controller;
 
 
 import com.grupo6.clinicaodontologica.persistence.model.authentication.User;
-import com.grupo6.clinicaodontologica.service.Impl.UserServiceImpl;
+import com.grupo6.clinicaodontologica.service.impl.UserServiceImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.grupo6.clinicaodontologica.securityConfiguration;
 
 import com.grupo6.clinicaodontologica.persistence.model.authentication.UserRoles;
-import com.grupo6.clinicaodontologica.service.Impl.UserServiceImpl;
+import com.grupo6.clinicaodontologica.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

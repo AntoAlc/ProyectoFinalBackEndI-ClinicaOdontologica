@@ -3,7 +3,7 @@ package com.grupo6.clinicaodontologica.controller;
 
 import com.grupo6.clinicaodontologica.dto.TurnoDTO;
 import com.grupo6.clinicaodontologica.service.ICRUDService;
-import com.grupo6.clinicaodontologica.service.Impl.TurnoCRUDServiceImpl;
+import com.grupo6.clinicaodontologica.service.impl.TurnoCRUDServiceImpl;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

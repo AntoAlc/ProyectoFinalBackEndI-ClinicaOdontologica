@@ -1,4 +1,4 @@
-package com.grupo6.clinicaodontologica.service.Impl;
+package com.grupo6.clinicaodontologica.service.impl;
 
 import com.grupo6.clinicaodontologica.persistence.model.authentication.User;
 import com.grupo6.clinicaodontologica.persistence.repository.IUserRepository;

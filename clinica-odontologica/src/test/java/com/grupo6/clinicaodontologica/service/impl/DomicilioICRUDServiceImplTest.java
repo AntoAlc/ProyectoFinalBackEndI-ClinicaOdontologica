@@ -1,4 +1,4 @@
-package com.grupo6.clinicaodontologica.service.Impl;
+package com.grupo6.clinicaodontologica.service.impl;
 
 
 import com.grupo6.clinicaodontologica.dto.DomicilioDTO;
@@ -13,8 +13,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @RunWith(SpringRunner.class)

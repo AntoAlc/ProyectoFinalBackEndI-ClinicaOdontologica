@@ -1,4 +1,4 @@
-package com.grupo6.clinicaodontologica.service.Impl;
+package com.grupo6.clinicaodontologica.service.impl;
 
 import com.grupo6.clinicaodontologica.dto.OdontologoDTO;
 import com.grupo6.clinicaodontologica.persistence.model.Odontologo;

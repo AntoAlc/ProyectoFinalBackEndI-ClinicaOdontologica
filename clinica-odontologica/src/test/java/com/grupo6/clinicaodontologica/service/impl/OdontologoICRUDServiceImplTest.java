@@ -1,4 +1,4 @@
-package com.grupo6.clinicaodontologica.service.Impl;
+package com.grupo6.clinicaodontologica.service.impl;
 
 import com.grupo6.clinicaodontologica.dto.OdontologoDTO;
 import org.junit.FixMethodOrder;
@@ -14,7 +14,6 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 
 @FixMethodOrder(MethodSorters.DEFAULT)

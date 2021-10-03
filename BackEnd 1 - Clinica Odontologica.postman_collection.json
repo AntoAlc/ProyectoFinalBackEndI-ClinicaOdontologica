@@ -6,169 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Domicilio",
-			"item": [
-				{
-					"name": "Crear domicilio",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"calle\": \"Calle Falsa\",\r\n    \"numero\": \"123\",\r\n    \"localidad\": \"Springfield\",\r\n    \"provincia\": \"Springfield\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8082/domicilios",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"domicilios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Actualizar domicilio",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Paciente Pepe\",\r\n    \"apellido\": \"Pepardo\",\r\n    \"dni\": \"999999999\",\r\n    \"domicilio\": {\r\n        \"id\": 1,\r\n        \"calle\": \"Calle Falsa\",\r\n        \"numero\": \"123\",\r\n        \"localidad\": \"Springfield\",\r\n        \"provincia\": \"Springfield\"\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "localhost:8082/domicilios",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"domicilios"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener domicilios",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/domicilios/",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"domicilios",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete domicilio",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/domicilios/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"domicilios",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar domicilios por calle y numero",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/domicilios/?calle=Calle%20Falsa&numero=123",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"domicilios",
-								""
-							],
-							"query": [
-								{
-									"key": "calle",
-									"value": "Calle%20Falsa"
-								},
-								{
-									"key": "numero",
-									"value": "123"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar domicilio por calle, num, loc y prov",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/domicilios/?calle=Calle%20Falsa&numero=123&localidad=Springfield&provincia=Springfield",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"domicilios",
-								""
-							],
-							"query": [
-								{
-									"key": "calle",
-									"value": "Calle%20Falsa"
-								},
-								{
-									"key": "numero",
-									"value": "123"
-								},
-								{
-									"key": "localidad",
-									"value": "Springfield"
-								},
-								{
-									"key": "provincia",
-									"value": "Springfield"
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Paciente",
 			"item": [
 				{
@@ -222,6 +59,26 @@
 							"path": [
 								"pacientes",
 								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete paciente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8082/pacientes/eliminar/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"pacientes",
+								"eliminar",
+								"2"
 							]
 						}
 					},
@@ -293,106 +150,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Delete paciente",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/pacientes/eliminar/1",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"pacientes",
-								"eliminar",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar paciente por dni",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/pacientes/buscar/?dni=123123",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"pacientes",
-								"buscar",
-								""
-							],
-							"query": [
-								{
-									"key": "dni",
-									"value": "123123"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar pacientes por nombre",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/pacientes/?nombre=Pepe",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"pacientes",
-								""
-							],
-							"query": [
-								{
-									"key": "nombre",
-									"value": "Pepe"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar pacientes por nombre y apellido",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/pacientes/?nombre=Pepe&apellido=Pepardo",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"pacientes",
-								""
-							],
-							"query": [
-								{
-									"key": "nombre",
-									"value": "Pepe"
-								},
-								{
-									"key": "apellido",
-									"value": "Pepardo"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
@@ -428,13 +185,41 @@
 					"response": []
 				},
 				{
+					"name": "Crear odontologo 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Raton\",\r\n    \"apellido\": \"Rodriguez\",\r\n    \"matricula\": \"112233\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/odontologos/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"odontologos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Actualizar odontologo",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Ratoncito\",\r\n    \"apellido\": \"Don Perez\",\r\n    \"matricula\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"Ratoncito\",\r\n    \"apellido\": \"Don Perez\",\r\n    \"matricula\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -480,7 +265,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8082/odontologos/eliminar/1",
+							"raw": "localhost:8082/odontologos/eliminar/2",
 							"host": [
 								"localhost"
 							],
@@ -488,7 +273,7 @@
 							"path": [
 								"odontologos",
 								"eliminar",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -513,85 +298,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Buscar odontologo por matricula",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/odontologos/?matricula=112233",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"odontologos",
-								""
-							],
-							"query": [
-								{
-									"key": "matricula",
-									"value": "112233"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar odontologos por nombre",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/odontologos/?nombre=Pepo",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"odontologos",
-								""
-							],
-							"query": [
-								{
-									"key": "nombre",
-									"value": "Pepo"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar odontologos por nombre y apellido",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/odontologos/?nombre=Pepo&apellido=Pepardo",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"odontologos",
-								""
-							],
-							"query": [
-								{
-									"key": "nombre",
-									"value": "Pepo"
-								},
-								{
-									"key": "apellido",
-									"value": "Pepardo"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
@@ -605,7 +311,63 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"paciente\": {\"id\": \"2\"},\r\n    \"odontologo\": {\"id\": \"2\"},\r\n    \"fecha\": \"2021-09-19T17:00\"\r\n}",
+							"raw": "{\r\n    \"paciente\": {\"id\": \"1\"},\r\n    \"odontologo\": {\"id\": \"1\"},\r\n    \"fecha\": \"2021-10-02T11:30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/turnos/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"turnos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear turno 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paciente\": {\"id\": \"1\"},\r\n    \"odontologo\": {\"id\": \"1\"},\r\n    \"fecha\": \"2021-10-09T17:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8082/turnos/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"turnos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear turno 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paciente\": {\"id\": \"1\"},\r\n    \"odontologo\": {\"id\": \"1\"},\r\n    \"fecha\": \"2021-10-15T11:00\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -633,7 +395,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"1\",\r\n    \"paciente\": {\"id\": \"1\"},\r\n    \"odontologo\": {\"id\": \"1\"},\r\n    \"fecha\": \"2020-09-12\"\r\n}",
+							"raw": "{\r\n    \"id\": \"1\",\r\n    \"paciente\": {\"id\": \"1\"},\r\n    \"odontologo\": {\"id\": \"1\"},\r\n    \"fecha\": \"2021-10-02T14:30\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -682,7 +444,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8082/turnos/buscarProximos?anio=2021&mes=09&dia=12&cantdias=7",
+							"raw": "localhost:8082/turnos/buscarProximos?anio=2021&mes=10&dia=08&cantdias=7",
 							"host": [
 								"localhost"
 							],
@@ -698,11 +460,11 @@
 								},
 								{
 									"key": "mes",
-									"value": "09"
+									"value": "10"
 								},
 								{
 									"key": "dia",
-									"value": "12"
+									"value": "08"
 								},
 								{
 									"key": "cantdias",
@@ -739,109 +501,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8082/turnos/1",
+							"raw": "localhost:8082/turnos/eliminar/2",
 							"host": [
 								"localhost"
 							],
 							"port": "8082",
 							"path": [
 								"turnos",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener turno por nombres de odontologo",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/turnos/?nombreOdontologo=Pepo&apellidoOdontologo=Pepardo",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"turnos",
-								""
-							],
-							"query": [
-								{
-									"key": "nombreOdontologo",
-									"value": "Pepo"
-								},
-								{
-									"key": "apellidoOdontologo",
-									"value": "Pepardo"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener turno por nombres de paciente y odontologo",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/turnos/?nombrePaciente=Pepe&apellidoPaciente=Pepardo&nombreOdontologo=Pepo&apellidoOdontologo=Pepardo",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"turnos",
-								""
-							],
-							"query": [
-								{
-									"key": "nombrePaciente",
-									"value": "Pepe"
-								},
-								{
-									"key": "apellidoPaciente",
-									"value": "Pepardo"
-								},
-								{
-									"key": "nombreOdontologo",
-									"value": "Pepo"
-								},
-								{
-									"key": "apellidoOdontologo",
-									"value": "Pepardo"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener turno por matricula y dni",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/turnos/?matricula=123&dni=123456789",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"turnos",
-								""
-							],
-							"query": [
-								{
-									"key": "matricula",
-									"value": "123"
-								},
-								{
-									"key": "dni",
-									"value": "123456789"
-								}
+								"eliminar",
+								"2"
 							]
 						}
 					},
@@ -853,95 +521,66 @@
 			"name": "User",
 			"item": [
 				{
-					"name": "Crear user",
+					"name": "Login as Admin",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"paciente\": {\"id\": \"2\"},\r\n    \"odontologo\": {\"id\": \"2\"},\r\n    \"fecha\": \"2021-09-19T17:00\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "admin@dh.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
 								}
-							}
+							]
 						},
 						"url": {
-							"raw": "localhost:8082/users/crear",
+							"raw": "localhost:8082/login",
 							"host": [
 								"localhost"
 							],
 							"port": "8082",
 							"path": [
-								"users",
-								"crear"
+								"login"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Actualizar user",
+					"name": "Login as User",
 					"request": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"1\",\r\n    \"paciente\": {\"id\": \"1\"},\r\n    \"odontologo\": {\"id\": \"1\"},\r\n    \"fecha\": \"2020-09-12\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "anto@dh.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password2",
+									"type": "text"
 								}
-							}
+							]
 						},
 						"url": {
-							"raw": "localhost:8082/turnos/actualizar",
+							"raw": "localhost:8082/login",
 							"host": [
 								"localhost"
 							],
 							"port": "8082",
 							"path": [
-								"turnos",
-								"actualizar"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener user",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/turnos/buscarTodos",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"turnos",
-								"buscarTodos"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar user por id",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "localhost:8082/turnos/buscar/2",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"turnos",
-								"buscar",
-								"2"
+								"login"
 							]
 						}
 					},
@@ -961,42 +600,6 @@
 							"path": [
 								"turnos",
 								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "crear user/login",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "username",
-									"value": "anto@dh.com",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "AntoAlc",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "localhost:8082/login",
-							"host": [
-								"localhost"
-							],
-							"port": "8082",
-							"path": [
-								"login"
 							]
 						}
 					},
