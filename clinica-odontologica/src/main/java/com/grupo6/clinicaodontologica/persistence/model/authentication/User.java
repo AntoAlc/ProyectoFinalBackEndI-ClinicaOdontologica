@@ -14,7 +14,6 @@ import java.util.Collections;
 @Table(name = "Users")
 @Entity
 @Getter
-@Setter
 public class User implements UserDetails {
 
     @Id
@@ -23,19 +22,24 @@ public class User implements UserDetails {
     @Column
     private long id;
 
+    @Setter
     @Column
     private String name;
 
+    @Setter
     @Column
     private String username;
 
+    @Setter
     @Column
     private String email;
 
+    @Setter
     @Column
     private String password;
 
-
+    @Setter
+    @Column
     @Enumerated(EnumType.STRING)
     private UserRoles userRoles;
 
@@ -59,23 +63,34 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return email;
+    }
+
 
     @Override
     public String toString() {

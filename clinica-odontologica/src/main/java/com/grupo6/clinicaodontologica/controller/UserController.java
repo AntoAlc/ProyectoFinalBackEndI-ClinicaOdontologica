@@ -18,24 +18,11 @@ public class UserController {
 
     @Autowired
     UserServiceImpl userService;
-    private final Logger logger = Logger.getLogger(OdontologoController.class);
 
 
     @GetMapping("/")
     public String home(){
-        return "<h1> Welcome</h1>";
-    }
-
-
-    @GetMapping("/user")
-    public String user(){
-        return "<h1> Welcome User</h1>";
-    }
-
-
-    @GetMapping("/admin")
-    public String admin(){
-        return "<h1> Welcome Admin</h1>";
+        return "<h1> Bienvenido a la clinica odontológica de DH</h1>";
     }
 
 
@@ -43,9 +30,10 @@ public class UserController {
     public ResponseEntity<User> crear(@RequestBody User user){
 
         log.debug("Se está ejecutando el método 'crear' en User");
-        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(5);
-        String encodedPass = passwordEncoder.encode(user.getPassword());
-        user.setPassword(encodedPass);
+
+       // BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(5);
+        //String encodedPass = passwordEncoder.encode(user.getPassword());
+        //user.setPassword(encodedPass);
         return ResponseEntity.ok(userService.crear(user));
     }
 

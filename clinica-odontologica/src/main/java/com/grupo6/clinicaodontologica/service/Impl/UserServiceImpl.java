@@ -1,11 +1,13 @@
 package com.grupo6.clinicaodontologica.service.Impl;
 
-import com.grupo6.clinicaodontologica.dto.PacienteDTO;
 import com.grupo6.clinicaodontologica.persistence.model.authentication.User;
 import com.grupo6.clinicaodontologica.persistence.repository.IUserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -22,13 +24,15 @@ public class UserServiceImpl implements UserDetailsService{
     }
 
     @Override
-    public UserDetails loadUserByUsername(String email){
+    public UserDetails loadUserByUsername(String email) {
         return iUserRepository.findByEmail(email);
     }
 
 
     public User crear(User user) {
-
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String hashedPassword = passwordEncoder.encode(user.getPassword());
+        user.setPassword(hashedPassword);
         return iUserRepository.save(user);
     }
 

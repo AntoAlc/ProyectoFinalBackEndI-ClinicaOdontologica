@@ -31,10 +31,13 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/turnos/**").hasAnyAuthority(UserRoles.USER.name(), UserRoles.ADMIN.name())
                 .antMatchers("/odontologos/**", "/pacientes/**").hasAnyAuthority(UserRoles.ADMIN.name())
-                .anyRequest().authenticated()
+                .anyRequest()
+                .authenticated()
                 .and().formLogin().permitAll()
                 .and().logout().permitAll()
                 .and().exceptionHandling().accessDeniedPage("/403");
+
+        http.headers().frameOptions().disable();
 
 
     }
