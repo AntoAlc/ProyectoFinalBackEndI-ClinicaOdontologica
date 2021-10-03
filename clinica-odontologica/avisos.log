@@ -1,0 +1,102 @@
+[2021-10-01 17:55:06] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-01 17:55:12] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-01 17:55:12] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-01 18:00:48] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-01 18:00:52] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-01 18:00:52] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-01 18:00:56] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-01 18:00:56] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-01 18:00:59] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-01 18:01:12] [ DEBUG] [OdontologoController:27] ---- Buscando todos los odontólogos----
+[2021-10-01 18:05:01] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-01 18:05:01] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-01 18:05:03] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-01 18:05:03] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-01 18:05:07] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-01 18:05:11] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-01 18:05:11] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-01 18:05:22] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-01 18:05:22] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-01 18:05:25] [ DEBUG] [OdontologoController:27] ---- Buscando todos los odontólogos----
+[2021-10-01 18:06:10] [ DEBUG] [OdontologoController:61] Se está ejecutando el método 'actualizar' en odontólogo
+[2021-10-01 18:06:10] [ INFO ] [OdontologoController:66] Odontólogo con id: 1 actualizado.
+[2021-10-01 18:06:12] [ DEBUG] [OdontologoController:27] ---- Buscando todos los odontólogos----
+[2021-10-02 12:48:57] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 12:48:57] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 12:49:03] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 12:49:03] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 12:49:08] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-02 12:49:08] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-02 12:52:12] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 12:52:12] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 12:52:16] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 12:52:16] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 12:52:20] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-02 12:52:20] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-02 15:41:20] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 15:41:20] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 15:41:23] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 15:41:23] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 15:41:25] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-02 15:41:25] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-02 15:43:26] [ DEBUG] [OdontologoController:27] ---- Buscando todos los odontólogos----
+[2021-10-02 15:59:10] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 15:59:10] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 15:59:11] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 15:59:11] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 15:59:13] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-02 15:59:13] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-02 15:59:33] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:06:35] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 16:06:35] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 16:06:37] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-02 16:06:37] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-02 16:06:42] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:06:55] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:11:40] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 16:11:40] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 16:11:43] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 16:11:43] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 16:11:51] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-02 16:11:51] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-02 16:12:02] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:12:20] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:12:20] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:13:53] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:13:53] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:14:01] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:15:01] [ DEBUG] [OdontologoController:33] ---- Buscando odontólogo por id.... ----
+[2021-10-02 16:15:06] [ DEBUG] [OdontologoController:33] ---- Buscando odontólogo por id.... ----
+[2021-10-02 16:15:06] [ INFO ] [OdontologoController:39] Odontólogo con id: 1 encontrado.
+[2021-10-02 16:15:38] [ DEBUG] [TurnoController:43] ---- Buscando turno por id.... ----
+[2021-10-02 16:15:38] [ INFO ] [TurnoController:49] Turno con id: 2 encontrado.
+[2021-10-02 16:17:29] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:19:07] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:19:39] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:19:39] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:19:43] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:19:43] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:24:18] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:24:18] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:28:25] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 16:28:25] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 16:28:46] [ DEBUG] [PacienteController:49] Se está ejecutando el método 'crear' en paciente
+[2021-10-02 16:28:46] [ DEBUG] [PacienteController:52] Registrando paciente con id: null
+[2021-10-02 16:28:51] [ DEBUG] [OdontologoController:48] Se está ejecutando el método 'crear' en odontólogo
+[2021-10-02 16:28:51] [ DEBUG] [OdontologoController:51] Registrando odontólogo con id: null
+[2021-10-02 16:29:11] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:29:11] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:29:21] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:29:21] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:29:30] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:31:30] [ DEBUG] [TurnoController:60] Se está ejecutando el método 'crear' en turno
+[2021-10-02 16:31:30] [ DEBUG] [TurnoController:63] Registrando turno con id: null
+[2021-10-02 16:31:50] [ DEBUG] [TurnoController:37] ---- Buscando todos los turnos----
+[2021-10-02 16:33:49] [ DEBUG] [PacienteController:29] ---- Buscando todos los pacientes----
+[2021-10-02 16:33:53] [ DEBUG] [PacienteController:35] ---- Buscando paciente por id.... ----
+[2021-10-02 16:33:53] [ INFO ] [PacienteController:40] Paciente con id: 2 encontrado.
+[2021-10-02 16:34:01] [ DEBUG] [OdontologoController:61] Se está ejecutando el método 'actualizar' en odontólogo
+[2021-10-02 16:34:01] [ INFO ] [OdontologoController:66] Odontólogo con id: 1 actualizado.
+[2021-10-02 16:34:04] [ DEBUG] [OdontologoController:27] ---- Buscando todos los odontólogos----
+[2021-10-02 16:34:33] [ DEBUG] [TurnoController:43] ---- Buscando turno por id.... ----
+[2021-10-02 16:34:33] [ INFO ] [TurnoController:49] Turno con id: 2 encontrado.
